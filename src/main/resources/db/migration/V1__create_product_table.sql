@@ -1,0 +1,8 @@
+CREATE table product (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(50) NOT NULL UNIQUE,
+    category VARCHAR(20) NOT NULL,
+    description VARCHAR(500) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP DEFAULT NULL
+);
