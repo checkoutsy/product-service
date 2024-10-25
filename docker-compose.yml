@@ -5,5 +5,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8082:8082"
-    network_mode: host
+      - "8080:8080"
+    networks:
+      - checkoutsy-network
+
+networks:
+  checkoutsy-network:
+    external: true

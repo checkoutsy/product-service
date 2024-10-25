@@ -11,8 +11,8 @@
     <groupId>com.checkoutsy.service</groupId>
     <artifactId>product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>product</name>
-    <description>product</description>
+    <name>product-service</name>
+    <description>Product Service</description>
     <url/>
     <licenses>
         <license/>

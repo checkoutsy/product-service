@@ -1,14 +1,20 @@
 services:
-  db:
+  product-db:
     image: postgres:latest
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - product_data:/var/lib/postgresql/data
+    networks:
+      - checkoutsy-network
 
 volumes:
-  postgres_data:
+  product_data:
+
+networks:
+  checkoutsy-network:
+    external: true
