@@ -6,9 +6,9 @@ spring:
   application:
     name: product-service
   datasource:
-    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB}
-    username: ${POSTGRES_USERNAME}
-    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/product
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   flyway:
     enabled: true
